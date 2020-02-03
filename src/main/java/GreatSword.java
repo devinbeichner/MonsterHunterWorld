@@ -38,18 +38,19 @@ public class GreatSword extends Blademaster {
         motionValues.put("True Charge Slash II (second hit)", 0.182);
         motionValues.put("True Charge Slash III (first hit)", 0.21);
         motionValues.put("True Charge Slash III (second hit)", 0.210);
-        motionValues.put("True Charge Slash Overcharge", 0.48);
-        motionValues.put("Kick", 0.48);
-        motionValues.put("Jump Slash", 0.48);
-        motionValues.put("Jump Charge Slash I ", 0.48);
-        motionValues.put("Jump Charge Slash II", 0.48);
-        motionValues.put("Jump Charge Slash III", 0.48);
+        motionValues.put("True Charge Slash Overcharge (first hit)", 0.20);
+        motionValues.put("True Charge Slash Overcharge (second hit)", 1.82);
+        motionValues.put("Kick", .04);
+        motionValues.put("Jump Slash", 0.69);
+        motionValues.put("Jump Charge Slash I ", 0.69);
+        motionValues.put("Jump Charge Slash II", 0.85);
+        motionValues.put("Jump Charge Slash III", 0.104);
         motionValues.put("Rising Charge Slash I", 0.48);
-        motionValues.put("Rising Charge Slash II ", 0.48);
-        motionValues.put("Rising Charge Slash III", 0.48);
-        motionValues.put("Falling Thrust I ", 0.48);
-        motionValues.put("Falling Thrust II", 0.48);
-        motionValues.put("Falling Thrust III ", 0.48);
+        motionValues.put("Rising Charge Slash II ", 0.73);
+        motionValues.put("Rising Charge Slash III", 1.0);
+        motionValues.put("Falling Thrust I", 0.14);
+        motionValues.put("Falling Thrust II", 0.21);
+        motionValues.put("Falling Thrust III ", 0.26);
     }
 
     protected void trueDamage(){
