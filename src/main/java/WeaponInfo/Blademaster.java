@@ -1,3 +1,5 @@
+package WeaponInfo;
+
 public abstract class Blademaster extends Weapon {
     private String sharpnessColor;
     private double physicalSharpnessMod;

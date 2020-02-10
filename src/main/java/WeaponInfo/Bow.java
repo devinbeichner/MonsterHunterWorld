@@ -1,5 +1,4 @@
-import java.util.HashMap;
-import java.util.Map;
+package WeaponInfo;
 
 public class Bow extends Weapon {
 

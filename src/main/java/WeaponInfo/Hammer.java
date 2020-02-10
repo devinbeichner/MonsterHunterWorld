@@ -1,5 +1,4 @@
-import java.util.HashMap;
-import java.util.Map;
+package WeaponInfo;
 
 public class Hammer extends Blademaster {
 
