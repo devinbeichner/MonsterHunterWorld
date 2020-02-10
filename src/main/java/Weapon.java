@@ -1,5 +1,3 @@
-import java.util.Map;
-
 public abstract class Weapon {
     private String weaponName;
     private int rarity;
