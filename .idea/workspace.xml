@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5538ad69-20c3-4306-8a11-20d2de9ab175" name="Default" comment="" />
+    <list default="true" id="5538ad69-20c3-4306-8a11-20d2de9ab175" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/GreatSword.java" afterPath="$PROJECT_DIR$/src/main/java/GreatSword.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,12 +15,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+              <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -31,16 +34,6 @@
               <folding>
                 <element signature="e#584#585#0" expanded="true" />
                 <element signature="e#617#618#0" expanded="true" />
-                <element signature="e#647#648#0" expanded="true" />
-                <element signature="e#676#677#0" expanded="true" />
-                <element signature="e#706#707#0" expanded="true" />
-                <element signature="e#735#736#0" expanded="true" />
-                <element signature="e#770#771#0" expanded="true" />
-                <element signature="e#801#802#0" expanded="true" />
-                <element signature="e#837#838#0" expanded="true" />
-                <element signature="e#869#870#0" expanded="true" />
-                <element signature="e#906#907#0" expanded="true" />
-                <element signature="e#939#940#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -50,7 +43,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/Blademaster.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="11" selection-end-column="5" />
+              <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="11" selection-end-column="5" />
               <folding>
                 <element signature="e#1492#1493#0" expanded="true" />
                 <element signature="e#1529#1530#0" expanded="true" />
@@ -67,18 +60,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GreatSword.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GreatSword.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/GreatSword.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+            <state relative-caret-position="153">
+              <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="12" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#178#194#0" expanded="true" />
-                <element signature="e#498#499#0" expanded="true" />
-                <element signature="e#552#553#0" expanded="true" />
-                <element signature="e#594#595#0" expanded="true" />
-                <element signature="e#627#628#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Hammer.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Hammer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="47" lean-forward="false" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#174#190#0" expanded="true" />
+                <element signature="e#488#489#0" expanded="true" />
+                <element signature="e#542#543#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -107,6 +111,7 @@
         <option value="$PROJECT_DIR$/src/main/java/Weapon.java" />
         <option value="$PROJECT_DIR$/src/main/java/Blademaster.java" />
         <option value="$PROJECT_DIR$/src/main/java/GreatSword.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Hammer.java" />
       </list>
     </option>
   </component>
@@ -117,7 +122,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1087" />
@@ -140,10 +145,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -287,7 +292,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1087" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -302,7 +307,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24217118" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12083333" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -310,11 +315,11 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -328,7 +333,7 @@
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+          <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -340,16 +345,6 @@
           <folding>
             <element signature="e#584#585#0" expanded="true" />
             <element signature="e#617#618#0" expanded="true" />
-            <element signature="e#647#648#0" expanded="true" />
-            <element signature="e#676#677#0" expanded="true" />
-            <element signature="e#706#707#0" expanded="true" />
-            <element signature="e#735#736#0" expanded="true" />
-            <element signature="e#770#771#0" expanded="true" />
-            <element signature="e#801#802#0" expanded="true" />
-            <element signature="e#837#838#0" expanded="true" />
-            <element signature="e#869#870#0" expanded="true" />
-            <element signature="e#906#907#0" expanded="true" />
-            <element signature="e#939#940#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -375,15 +370,73 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/GreatSword.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+        <state relative-caret-position="255">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#178#194#0" expanded="true" />
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#552#553#0" expanded="true" />
-            <element signature="e#594#595#0" expanded="true" />
-            <element signature="e#627#628#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Blademaster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="11" selection-end-column="5" />
+          <folding>
+            <element signature="e#1492#1493#0" expanded="true" />
+            <element signature="e#1529#1530#0" expanded="true" />
+            <element signature="e#1576#1577#0" expanded="true" />
+            <element signature="e#1619#1620#0" expanded="true" />
+            <element signature="e#1667#1668#0" expanded="true" />
+            <element signature="e#1711#1712#0" expanded="true" />
+            <element signature="e#1745#1746#0" expanded="true" />
+            <element signature="e#1775#1776#0" expanded="true" />
+            <element signature="e#1817#1818#0" expanded="true" />
+            <element signature="e#1856#1857#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Weapon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding>
+            <element signature="e#584#585#0" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GreatSword.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#178#194#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Hammer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="47" lean-forward="false" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#174#190#0" expanded="true" />
+            <element signature="e#488#489#0" expanded="true" />
+            <element signature="e#542#543#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -16,7 +16,7 @@ public class GreatSword extends Blademaster {
         this.trueDamage = this.getAttack()/4.8;
     }
 
-    
+
 
     public String getWeaponType(){
         return weaponType;
