@@ -1,10 +1,15 @@
+import java.util.HashMap;
+import java.util.Map;
+
 public abstract class Weapon {
     private String weaponName;
     private int rarity;
     private int attack;
     private double affinity;
     private double elderseal;
+    protected String damageType;
     protected double trueDamage;
+    protected Map<String, Double> motionValues = new HashMap<String, Double>();
 
     public Weapon(String weaponName, int rarity, int attack, int affinity, int elderseal){
         this.weaponName = weaponName;
@@ -39,4 +44,8 @@ public abstract class Weapon {
     public double getTrueDamage() {
         return trueDamage;
     }
+
+    public Map<String, Double> getMotionValues(){return motionValues;
+    }
+    public String getDamageType(){return damageType;}
 }
