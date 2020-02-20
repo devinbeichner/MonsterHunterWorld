@@ -5,7 +5,6 @@ public abstract class Blademaster extends Weapon {
     private double physicalSharpnessMod;
     private double elementalSharpnessMod;
     private String element;
-    private String impactOrSevering;
 
     public Blademaster(String weaponName, int rarity, int attack, int affinity, int elderseal, String sharpnessColor, String element){
         super(weaponName, rarity, attack, affinity, elderseal);
@@ -14,7 +13,10 @@ public abstract class Blademaster extends Weapon {
     }
 
     protected void setSharpness(String sharpnessColor) {
-        if (sharpnessColor.equals("white")) {
+        if (sharpnessColor.equals("purple")){
+            this.physicalSharpnessMod = 1.37;
+            this.elementalSharpnessMod = 1.25;
+        } else if (sharpnessColor.equals("white")) {
             this.physicalSharpnessMod = 1.32;
             this.elementalSharpnessMod = 1.125;
         } else if (sharpnessColor.equals("blue")) {
@@ -50,9 +52,5 @@ public abstract class Blademaster extends Weapon {
 
     public String getElement() {
         return element;
-    }
-
-    public String getImpactOrSevering(){
-        return impactOrSevering;
     }
 }
