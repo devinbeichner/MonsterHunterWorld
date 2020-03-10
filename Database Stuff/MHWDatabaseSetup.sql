@@ -1,16 +1,16 @@
 BEGIN TRANSACTION;
 
 DROP TABLE IF EXISTS gunner_ammo;
-DROP TABLE IF EXISTS elements;
 DROP TABLE IF EXISTS blademaster;
 DROP TABLE IF EXISTS sharpness;
 DROP TABLE IF EXISTS ammo;
 DROP TABLE IF EXISTS gunner;
 DROP TABLE IF EXISTS weapon_type;
-DROP TABLE IF EXISTS monster;
 DROP TABLE IF EXISTS monster_bodypart;
 DROP TABLE IF EXISTS bodypart;
 DROP TABLE IF EXISTS monster_element;
+DROP TABLE IF EXISTS monster;
+DROP TABLE IF EXISTS elements;
 
 CREATE TABLE blademaster (
 
@@ -103,7 +103,7 @@ CREATE TABLE monster_bodypart(
         
         monster_id int NOT NULL,
         bodypart_id int NOT NULL,
-        physical_resistance double NOT NULL,
+        physical_resistance int NOT NULL
 
 );
 
@@ -120,7 +120,7 @@ CREATE TABLE monster_element(
 
         monster_id int NOT NULL,
         element_id int NOT NULL,
-        element_resistance double NOT NULL
+        element_resistance int NOT NULL
 
 );
 
@@ -231,10 +231,10 @@ VALUES  ('head'),
         ('jaw'),
         ('upper neck'),
         ('lower neck'),
-        ('shell')
+        ('shell');
         
-ALTER TABLE blademaster ADD CONSTRAINT fk_weapon_type_id FOREIGN KEY (weapon_type_id) REFERENCES weapon_type (weapon_type_id);
 ALTER TABLE gunner ADD CONSTRAINT fk_weapon_type_id FOREIGN KEY (weapon_type_id) REFERENCES weapon_type (weapon_type_id);
+ALTER TABLE blademaster ADD CONSTRAINT fk_weapon_type_id FOREIGN KEY (weapon_type_id) REFERENCES weapon_type (weapon_type_id);
 ALTER TABLE blademaster ADD CONSTRAINT fk_sharpness_id FOREIGN KEY (sharpness_id) REFERENCES sharpness (sharpness_id);
 ALTER TABLE blademaster ADD CONSTRAINT fk_element_id FOREIGN KEY (element_id) REFERENCES elements (element_id);
 ALTER TABLE monster_bodypart ADD CONSTRAINT fk_monster_id FOREIGN KEY (monster_id) REFERENCES monster (monster_id);
