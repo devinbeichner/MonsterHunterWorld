@@ -13,6 +13,8 @@ public abstract class Weapon {
     protected double trueDamage;
     protected Map<String, Double> motionValues = new HashMap<String, Double>();
 
+    public Weapon() {};
+    
     public Weapon(String weaponName, int rarity, int attack, int affinity, int elderseal){
         this.weaponName = weaponName;
         this.rarity = rarity;
@@ -23,31 +25,69 @@ public abstract class Weapon {
 
     protected abstract void trueDamage();
 
-    public String getWeaponName() {
-        return weaponName;
-    }
+	public String getWeaponName() {
+		return weaponName;
+	}
 
-    public int getRarity() {
-        return rarity;
-    }
+	public void setWeaponName(String weaponName) {
+		this.weaponName = weaponName;
+	}
 
-    public int getAttack() {
-        return attack;
-    }
+	public int getRarity() {
+		return rarity;
+	}
 
-    public double getAffinity() {
-        return affinity;
-    }
+	public void setRarity(int rarity) {
+		this.rarity = rarity;
+	}
 
-    public double getElderseal() {
-        return elderseal;
-    }
+	public int getAttack() {
+		return attack;
+	}
 
-    public double getTrueDamage() {
-        return trueDamage;
-    }
+	public void setAttack(int attack) {
+		this.attack = attack;
+	}
 
-    public Map<String, Double> getMotionValues(){return motionValues;
-    }
-    public String getDamageType(){return damageType;}
+	public double getAffinity() {
+		return affinity;
+	}
+
+	public void setAffinity(double affinity) {
+		this.affinity = affinity;
+	}
+
+	public double getElderseal() {
+		return elderseal;
+	}
+
+	public void setElderseal(double elderseal) {
+		this.elderseal = elderseal;
+	}
+
+	public String getDamageType() {
+		return damageType;
+	}
+
+	public void setDamageType(String damageType) {
+		this.damageType = damageType;
+	}
+
+	public double getTrueDamage() {
+		return trueDamage;
+	}
+
+	public void setTrueDamage(double trueDamage) {
+		this.trueDamage = trueDamage;
+	}
+
+	public Map<String, Double> getMotionValues() {
+		return motionValues;
+	}
+
+	public void setMotionValues(Map<String, Double> motionValues) {
+		this.motionValues = motionValues;
+	}
+
+    
 }

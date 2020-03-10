@@ -1,8 +1,10 @@
 package WeaponInfo;
 
+import java.util.List;
+
 public class Bow extends Weapon {
 
-    private String ammoElement;
+    private List<String> coatings;
 
     {
         this.motionValues.put("Shoot", 0.08);
@@ -19,6 +21,11 @@ public class Bow extends Weapon {
         this.motionValues.put("Charge I Wyvern's Arrow (Variable amount of hits)", 0.24);
         this.motionValues.put("Charge II Wyvern's Arrow (Variable amount of hits)", 0.26);
     }
+    
+    public Bow() {
+    	super();
+    	this.damageType = "projectile";
+    };
 
     public Bow(String weaponName, int rarity, int attack, int affinity, int elderseal){
         super(weaponName, rarity, attack, affinity, elderseal);
@@ -29,11 +36,11 @@ public class Bow extends Weapon {
         this.trueDamage = getAttack()/1.2;
     }
 
-    public String getAmmoElement(){
-        return ammoElement;
+    public List<String> getCoatings(){
+        return coatings;
     }
-    public void setAmmoElement(String ammoElement){
-        this.ammoElement = ammoElement;
+    public void setCoatings(List<String> ammoElement){
+        this.coatings = ammoElement;
     }
 
 }

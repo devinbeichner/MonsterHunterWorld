@@ -44,6 +44,11 @@ public class GreatSword extends Blademaster {
         this.motionValues.put("Falling Thrust II", 0.21);
         this.motionValues.put("Falling Thrust III ", 0.26);
     }
+    
+    public GreatSword() {
+    	super();
+    	this.damageType = "severing";
+    }
 
     public GreatSword(String weaponName, int rarity, int attack, int affinity, int elderseal, String sharpnessColor, String element){
         super(weaponName, rarity, attack, affinity, elderseal, sharpnessColor, element);
@@ -53,5 +58,7 @@ public class GreatSword extends Blademaster {
     protected void trueDamage(){
         this.trueDamage = this.getAttack()/4.8;
     }
+    
+    
 
 }

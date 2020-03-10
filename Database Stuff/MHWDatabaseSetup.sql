@@ -7,6 +7,10 @@ DROP TABLE IF EXISTS sharpness;
 DROP TABLE IF EXISTS ammo;
 DROP TABLE IF EXISTS gunner;
 DROP TABLE IF EXISTS weapon_type;
+DROP TABLE IF EXISTS monster;
+DROP TABLE IF EXISTS monster_bodypart;
+DROP TABLE IF EXISTS bodypart;
+DROP TABLE IF EXISTS monster_element;
 
 CREATE TABLE blademaster (
 
@@ -86,6 +90,40 @@ CREATE TABLE gunner_ammo(
         
 );
 
+CREATE TABLE monster (
+
+        monster_id serial,
+        name varchar(100) NOT NULL,
+        
+        CONSTRAINT pk_monster PRIMARY KEY (monster_id)
+        
+);
+
+CREATE TABLE monster_bodypart(
+        
+        monster_id int NOT NULL,
+        bodypart_id int NOT NULL,
+        physical_resistance double NOT NULL,
+
+);
+
+CREATE TABLE bodypart(
+
+        bodypart_id serial,
+        bodypart_name varchar(100) NOT NULL,
+        
+        CONSTRAINT pk_bodypart PRIMARY KEY (bodypart_id)
+
+);
+
+CREATE TABLE monster_element(
+
+        monster_id int NOT NULL,
+        element_id int NOT NULL,
+        element_resistance double NOT NULL
+
+);
+
 
 INSERT INTO weapon_type (weapon_name)
 VALUES  ('great sword'),
@@ -151,9 +189,58 @@ VALUES  ('power'),
         ('armor'),
         ('tranq');
         
+INSERT INTO bodypart(bodypart_name)
+VALUES  ('head'),
+        ('neck'),
+        ('throat'),
+        ('back'),
+        ('body'),
+        ('forelegs'),
+        ('hindlegs'),
+        ('tail base'),
+        ('tail'),
+        ('crow'),
+        ('arms'),
+        ('legs'),
+        ('nose'),
+        ('wings'),
+        ('tail tip'),
+        ('horns'),
+        ('torso'),
+        ('stomach'),
+        ('claws'),
+        ('horns'),
+        ('chest'),
+        ('spore sac'),
+        ('lower body'),
+        ('stomach inflated'),
+        ('fin'),
+        ('rock'),
+        ('neck pouch'),
+        ('tongue'),
+        ('head bone'),
+        ('hindleg bones'),
+        ('rock head casing face'),
+        ('rock head casing top'),
+        ('rock head casing bottom'),
+        ('rock lower body'),
+        ('rock forelegs'),
+        ('rock hindlegs'),
+        ('rock wings'),
+        ('antennae'),
+        ('jaw'),
+        ('upper neck'),
+        ('lower neck'),
+        ('shell')
+        
 ALTER TABLE blademaster ADD CONSTRAINT fk_weapon_type_id FOREIGN KEY (weapon_type_id) REFERENCES weapon_type (weapon_type_id);
 ALTER TABLE gunner ADD CONSTRAINT fk_weapon_type_id FOREIGN KEY (weapon_type_id) REFERENCES weapon_type (weapon_type_id);
 ALTER TABLE blademaster ADD CONSTRAINT fk_sharpness_id FOREIGN KEY (sharpness_id) REFERENCES sharpness (sharpness_id);
 ALTER TABLE blademaster ADD CONSTRAINT fk_element_id FOREIGN KEY (element_id) REFERENCES elements (element_id);
+ALTER TABLE monster_bodypart ADD CONSTRAINT fk_monster_id FOREIGN KEY (monster_id) REFERENCES monster (monster_id);
+ALTER TABLE monster_bodypart ADD CONSTRAINT fk_bodypart_id FOREIGN KEY (bodypart_id) REFERENCES bodypart (bodypart_id);
+ALTER TABLE monster_element ADD CONSTRAINT fk_monster_id FOREIGN KEY (monster_id) REFERENCES monster (monster_id);
+ALTER TABLE monster_element ADD CONSTRAINT fk_element_id FOREIGN KEY (element_id) REFERENCES elements (element_id);
+
 
 COMMIT;

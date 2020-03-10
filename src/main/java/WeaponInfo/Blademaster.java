@@ -5,6 +5,10 @@ public abstract class Blademaster extends Weapon {
     private double physicalSharpnessMod;
     private double elementalSharpnessMod;
     private String element;
+    
+    public Blademaster() {
+    	super();
+    }
 
     public Blademaster(String weaponName, int rarity, int attack, int affinity, int elderseal, String sharpnessColor, String element){
         super(weaponName, rarity, attack, affinity, elderseal);
@@ -37,20 +41,36 @@ public abstract class Blademaster extends Weapon {
         }
     }
 
+	public String getSharpnessColor() {
+		return sharpnessColor;
+	}
 
-    public String getSharpnessColor() {
-        return sharpnessColor;
-    }
+	public void setSharpnessColor(String sharpnessColor) {
+		this.sharpnessColor = sharpnessColor;
+	}
 
-    public double getPhysicalSharpnessMod() {
-        return physicalSharpnessMod;
-    }
+	public double getPhysicalSharpnessMod() {
+		return physicalSharpnessMod;
+	}
 
-    public double getElementalSharpnessMod() {
-        return elementalSharpnessMod;
-    }
+	public void setPhysicalSharpnessMod(double physicalSharpnessMod) {
+		this.physicalSharpnessMod = physicalSharpnessMod;
+	}
 
-    public String getElement() {
-        return element;
-    }
+	public double getElementalSharpnessMod() {
+		return elementalSharpnessMod;
+	}
+
+	public void setElementalSharpnessMod(double elementalSharpnessMod) {
+		this.elementalSharpnessMod = elementalSharpnessMod;
+	}
+
+	public String getElement() {
+		return element;
+	}
+
+	public void setElement(String element) {
+		this.element = element;
+	}
+
 }

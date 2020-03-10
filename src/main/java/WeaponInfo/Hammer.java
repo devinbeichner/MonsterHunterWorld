@@ -37,6 +37,11 @@ public class Hammer extends Blademaster {
         this.motionValues.put("Aerial Spinning Bludgeon (Each in air hit)", 0.30);
         this.motionValues.put("Aerial Spinning Bludgeon (Last hit)", 1.0);
     }
+    
+    public Hammer() {
+    	super();
+    	this.damageType = "impact";
+    }
 
     public Hammer(String weaponName, int rarity, int attack, int affinity, int elderseal, String sharpnessColor, String element){
         super(weaponName, rarity, attack, affinity, elderseal, sharpnessColor, element);
